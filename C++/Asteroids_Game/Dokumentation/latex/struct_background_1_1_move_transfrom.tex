@@ -1,0 +1,72 @@
+\hypertarget{struct_background_1_1_move_transfrom}{}\doxysection{Background\+::Move\+Transfrom Struct Reference}
+\label{struct_background_1_1_move_transfrom}\index{Background::MoveTransfrom@{Background::MoveTransfrom}}
+
+
+\mbox{\hyperlink{struct_background_1_1_move_transfrom}{Move\+Transfrom}} STRUCT function object used in std\+::transform to move all objects contained in background vector.  
+
+
+
+
+{\ttfamily \#include $<$Content.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_background_1_1_move_transfrom_a3a091a200a6b61f372aedbca93fce293}{Move\+Transfrom}} (sf\+::\+Time deltatime)
+\item 
+\mbox{\hyperlink{class_entity}{Entity}} \mbox{\hyperlink{struct_background_1_1_move_transfrom_a825271b1dc82d2f440e8e273a2ac73e5}{operator()}} (\mbox{\hyperlink{class_entity}{Entity}} \&e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Time \mbox{\hyperlink{struct_background_1_1_move_transfrom_af12f63f1981525b35b8ed9b07f843307}{dT}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_background_1_1_move_transfrom}{Move\+Transfrom}} STRUCT function object used in std\+::transform to move all objects contained in background vector. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_background_1_1_move_transfrom_a3a091a200a6b61f372aedbca93fce293}\label{struct_background_1_1_move_transfrom_a3a091a200a6b61f372aedbca93fce293}} 
+\index{Background::MoveTransfrom@{Background::MoveTransfrom}!MoveTransfrom@{MoveTransfrom}}
+\index{MoveTransfrom@{MoveTransfrom}!Background::MoveTransfrom@{Background::MoveTransfrom}}
+\doxysubsubsection{\texorpdfstring{MoveTransfrom()}{MoveTransfrom()}}
+{\footnotesize\ttfamily Background\+::\+Move\+Transfrom\+::\+Move\+Transfrom (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{deltatime }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{struct_background_1_1_move_transfrom}{Move\+Transfrom}} constructor set the dT variable at construction. 
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time,sf\+::\+Time} & since last time objects were moved. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_background_1_1_move_transfrom_a825271b1dc82d2f440e8e273a2ac73e5}\label{struct_background_1_1_move_transfrom_a825271b1dc82d2f440e8e273a2ac73e5}} 
+\index{Background::MoveTransfrom@{Background::MoveTransfrom}!operator()@{operator()}}
+\index{operator()@{operator()}!Background::MoveTransfrom@{Background::MoveTransfrom}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}} Background\+::\+Move\+Transfrom\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_entity}{Entity}} \&}]{e }\end{DoxyParamCaption})}
+
+operator function used in std\+::tranfsorm on all objects in vector 
+\begin{DoxyParams}{Parameters}
+{\em e,Entity\&} & of object to be transformed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+transformed \mbox{\hyperlink{class_entity}{Entity}} object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_background_1_1_move_transfrom_af12f63f1981525b35b8ed9b07f843307}\label{struct_background_1_1_move_transfrom_af12f63f1981525b35b8ed9b07f843307}} 
+\index{Background::MoveTransfrom@{Background::MoveTransfrom}!dT@{dT}}
+\index{dT@{dT}!Background::MoveTransfrom@{Background::MoveTransfrom}}
+\doxysubsubsection{\texorpdfstring{dT}{dT}}
+{\footnotesize\ttfamily sf\+::\+Time Background\+::\+Move\+Transfrom\+::dT}
+
+Deltatime set at construction of struct, this will be used in the \mbox{\hyperlink{class_entity_a54b3d07540ef322721a97c6a18df9a46}{Entity\+::\+Move(sf\+::\+Time deltatime)}} function. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Content.\+h\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Content.\+cpp\end{DoxyCompactItemize}

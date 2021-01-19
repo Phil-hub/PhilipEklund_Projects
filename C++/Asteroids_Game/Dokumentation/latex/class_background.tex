@@ -1,0 +1,87 @@
+\hypertarget{class_background}{}\doxysection{Background Class Reference}
+\label{class_background}\index{Background@{Background}}
+
+
+\mbox{\hyperlink{class_background}{Background}} class using \mbox{\hyperlink{struct_engine}{Engine}} for loading resources.  
+
+
+
+
+{\ttfamily \#include $<$Content.\+h$>$}
+
+Inheritance diagram for Background\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_background}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_background_1_1_move_transfrom}{Move\+Transfrom}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_background_1_1_move_transfrom}{Move\+Transfrom}} STRUCT function object used in std\+::transform to move all objects contained in background vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_background_a05b686e4ce0cbdb3b1fa14a93fdf98a1}{Background}} ()
+\item 
+\mbox{\hyperlink{class_background_a36754df1deb720393217ade59da41557}{$\sim$\+Background}} ()
+\item 
+void \mbox{\hyperlink{class_background_aee666bf38da5bcfddbf582818a15e116}{draw\+Background}} (sf\+::\+Render\+Window \&window)
+\item 
+void \mbox{\hyperlink{class_background_a931d7d108cc7127d1c922340d2b87c06}{move\+Background}} (sf\+::\+Time delta\+Time)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_background}{Background}} class using \mbox{\hyperlink{struct_engine}{Engine}} for loading resources. 
+
+Class is responsible for all the background graphics such as stars and planet and put these Entitys in a std\+::vector. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_background_a05b686e4ce0cbdb3b1fa14a93fdf98a1}\label{class_background_a05b686e4ce0cbdb3b1fa14a93fdf98a1}} 
+\index{Background@{Background}!Background@{Background}}
+\index{Background@{Background}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{Background()}{Background()}}
+{\footnotesize\ttfamily Background\+::\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor, load star.\+png and planet file. create 100 random star objects on random positions on the screen \begin{DoxyPrecond}{Precondition}
+loads \char`\"{}\+Textures/stars.\+png\char`\"{} and \char`\"{}\+Textures/planet.\+png\char`\"{} on construction. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_background_a36754df1deb720393217ade59da41557}\label{class_background_a36754df1deb720393217ade59da41557}} 
+\index{Background@{Background}!````~Background@{$\sim$Background}}
+\index{````~Background@{$\sim$Background}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{$\sim$Background()}{~Background()}}
+{\footnotesize\ttfamily Background\+::$\sim$\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor, everything is zero 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_background_aee666bf38da5bcfddbf582818a15e116}\label{class_background_aee666bf38da5bcfddbf582818a15e116}} 
+\index{Background@{Background}!drawBackground@{drawBackground}}
+\index{drawBackground@{drawBackground}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{drawBackground()}{drawBackground()}}
+{\footnotesize\ttfamily void Background\+::draw\+Background (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+draw\+Background 
+\begin{DoxyParams}{Parameters}
+{\em window,sf\+::\+Render\+Window\&} & the renderwindow. call draw function on all objects in background vector to the input window\&. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_background_a931d7d108cc7127d1c922340d2b87c06}\label{class_background_a931d7d108cc7127d1c922340d2b87c06}} 
+\index{Background@{Background}!moveBackground@{moveBackground}}
+\index{moveBackground@{moveBackground}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{moveBackground()}{moveBackground()}}
+{\footnotesize\ttfamily void Background\+::move\+Background (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta\+Time }\end{DoxyParamCaption})}
+
+move\+Background move all the objects in the background using iterator and Move\+Transform struct function. 
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & sf\+::\+Time since last time it moved \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Content.\+h\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Content.\+cpp\end{DoxyCompactItemize}

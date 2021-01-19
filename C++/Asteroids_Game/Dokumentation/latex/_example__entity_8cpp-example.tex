@@ -1,0 +1,33 @@
+\hypertarget{_example__entity_8cpp-example}{}\doxysection{Example\+\_\+\+Entity.\+cpp}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}../Entity.h"{}}}
+\DoxyCodeLine{\textcolor{keywordtype}{void} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{//Create entity with sprite and position.}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_entity}{Entity}} ent(sf::Sprite(),sf::Vector2f(150.f,75.f));}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Load and set texture to entity}}
+\DoxyCodeLine{    sf::Texture* texture;}
+\DoxyCodeLine{    texture-\/>loadFromFile(\textcolor{stringliteral}{"{}image.png"{}});}
+\DoxyCodeLine{    ent.\mbox{\hyperlink{class_entity_a4df4502cce07862130f09d97183c8455}{setTexture}}(texture);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Set specific area of texture to be displayed, x,y,size\_x,size\_y}}
+\DoxyCodeLine{    ent.\mbox{\hyperlink{class_entity_a8ff1f0c92459217d5df38d2d846c2c0a}{setTextureRect}}(sf::IntRect(0, 0, 15, 15));}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Move entety by 10 in X axis.}}
+\DoxyCodeLine{    ent.\mbox{\hyperlink{class_entity_a54b3d07540ef322721a97c6a18df9a46}{Move}}(sf::Vector2f(10, 0));}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Rotate the entity by 2.}}
+\DoxyCodeLine{    ent.\mbox{\hyperlink{class_entity_a4f9b35b32e2c17d606397a8c2bac4449}{Rotate}}(2.f);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Get the position of entity}}
+\DoxyCodeLine{    sf::Vector2f position = ent.\mbox{\hyperlink{class_entity_a11d7f8fde1e714c76a20b69793fa157c}{getPosition}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//To draw the entity, use sf::RenderWindow.draw(sf::sprite) function}}
+\DoxyCodeLine{    sf::RenderWindow RWindow;}
+\DoxyCodeLine{    RWindow.draw(ent.\mbox{\hyperlink{class_entity_a4db7b53829f5394f7a72a3c6f7268640}{EntityShape}}());}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

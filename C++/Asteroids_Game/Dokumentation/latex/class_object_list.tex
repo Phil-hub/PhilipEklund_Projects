@@ -1,0 +1,262 @@
+\hypertarget{class_object_list}{}\doxysection{Object\+List$<$ Type $>$ Class Template Reference}
+\label{class_object_list}\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+
+
+\mbox{\hyperlink{class_object}{Object}} list, a simple double directed linked list.  
+
+
+
+
+{\ttfamily \#include $<$Object\+List.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_list_a57c1ce3c6a145463d8e6512526792962}{Object\+List}} ()
+\item 
+\mbox{\hyperlink{class_object_list_a1a6a2344d649a0a228957a4da80f3e28}{$\sim$\+Object\+List}} ()
+\item 
+\mbox{\hyperlink{class_object_list_a1172c076c8ac85a596d0b92a776c6617}{Object\+List}} (const \mbox{\hyperlink{class_object_list}{Object\+List}} \&src)
+\item 
+\mbox{\hyperlink{class_object_list_af89ff3842964ba3556edf81ec76f4d32}{Object\+List}} (\mbox{\hyperlink{class_object_list}{Object\+List}} \&\&rhs)
+\item 
+\mbox{\Hypertarget{class_object_list_a3eed58710009785bd63d3b3e551f66aa}\label{class_object_list_a3eed58710009785bd63d3b3e551f66aa}} 
+bool {\bfseries is\+Empty} ()
+\item 
+void \mbox{\hyperlink{class_object_list_a6bfdf768e281d08068bd27b05036237d}{push\+\_\+back}} (Type data)
+\item 
+Type \& \mbox{\hyperlink{class_object_list_acb453cae157346bfaf1e4b85c2fee7b4}{pop\+\_\+back}} ()
+\item 
+void \mbox{\hyperlink{class_object_list_a55e268a0ce23ef765a180bdfc65ea1cd}{push\+\_\+front}} (Type data)
+\item 
+Type \& \mbox{\hyperlink{class_object_list_a68db9229458dbd04c48f2383d9deae48}{pop\+\_\+front}} ()
+\item 
+void \mbox{\hyperlink{class_object_list_a92231405c6efedc2d5a9a95806d4f660}{set\+Data}} (size\+\_\+t pos, Type data)
+\item 
+Type \& \mbox{\hyperlink{class_object_list_a44aee935c29437634be25ed4287e213f}{at}} (size\+\_\+t pos) const
+\item 
+void \mbox{\hyperlink{class_object_list_a31c3db113686ec5253f0406aa448acda}{remove}} (size\+\_\+t pos)
+\item 
+Type \& \mbox{\hyperlink{class_object_list_a857dbfe6c6619d1c8568665eb62d4cd5}{front}} () const
+\item 
+Type \& \mbox{\hyperlink{class_object_list_a1f190eff3331965b221a03cf4b2514c2}{back}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{class_object_list_a8931050420ae88b9a1e303d9e4602f36}{size}} () const
+\item 
+\mbox{\Hypertarget{class_object_list_a6cfbae63eff1fae0a5129d799fa2709f}\label{class_object_list_a6cfbae63eff1fae0a5129d799fa2709f}} 
+\mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_object_list}{Object\+List}} \&src)
+\item 
+Type \& \mbox{\hyperlink{class_object_list_a7f401d4ab8aecc337dcfbbd2cc62907e}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t index)
+\item 
+\mbox{\hyperlink{class_object}{Object}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_object_list_a688ce5b0c068f3206c1db5d8204b1538}{begin}} ()
+\item 
+\mbox{\hyperlink{class_object}{Object}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_object_list_a871c37aa2be6787e1ae9a998035da488}{end}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Type$>$\newline
+class Object\+List$<$ Type $>$}
+
+\mbox{\hyperlink{class_object}{Object}} list, a simple double directed linked list. 
+
+Linked list, pro\+: can remove objects in the middle of the list. Con\+: NO iterator \begin{DoxyAuthor}{Author}
+Philip EKlund 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyWarning}{Warning}
+Improper use can crash your application! 
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]Feature\+: there is no iterator class, use for loop \end{DoxyRefDesc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_object_list_a57c1ce3c6a145463d8e6512526792962}\label{class_object_list_a57c1ce3c6a145463d8e6512526792962}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!ObjectList@{ObjectList}}
+\index{ObjectList@{ObjectList}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{ObjectList()}{ObjectList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+\mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::\mbox{\hyperlink{class_object_list}{Object\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor, everything nullptr/zero \mbox{\Hypertarget{class_object_list_a1a6a2344d649a0a228957a4da80f3e28}\label{class_object_list_a1a6a2344d649a0a228957a4da80f3e28}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!````~ObjectList@{$\sim$ObjectList}}
+\index{````~ObjectList@{$\sim$ObjectList}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$ObjectList()}{~ObjectList()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+\mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::$\sim$\mbox{\hyperlink{class_object_list}{Object\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default destructor \mbox{\Hypertarget{class_object_list_a1172c076c8ac85a596d0b92a776c6617}\label{class_object_list_a1172c076c8ac85a596d0b92a776c6617}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!ObjectList@{ObjectList}}
+\index{ObjectList@{ObjectList}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{ObjectList()}{ObjectList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+\mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::\mbox{\hyperlink{class_object_list}{Object\+List}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$ \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+DEEP copy constructor copy one list into another. 
+\begin{DoxyParams}{Parameters}
+{\em src,Object\+List\&} & object desired to be copied into current object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_list_af89ff3842964ba3556edf81ec76f4d32}\label{class_object_list_af89ff3842964ba3556edf81ec76f4d32}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!ObjectList@{ObjectList}}
+\index{ObjectList@{ObjectList}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{ObjectList()}{ObjectList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+\mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::\mbox{\hyperlink{class_object_list}{Object\+List}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$ \&\&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+moveconstruct 
+\begin{DoxyParams}{Parameters}
+{\em rhs,will} & swap rhs \mbox{\hyperlink{class_object_list}{Object\+List}} to current object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_list_a44aee935c29437634be25ed4287e213f}\label{class_object_list_a44aee935c29437634be25ed4287e213f}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!at@{at}}
+\index{at@{at}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type\& \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+at retrieve data from position \begin{DoxyReturn}{Returns}
+data, data of Type\& from the desired position of the list. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_list_a1f190eff3331965b221a03cf4b2514c2}\label{class_object_list_a1f190eff3331965b221a03cf4b2514c2}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!back@{back}}
+\index{back@{back}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type\& \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+back retrieve data from the back of the list. \begin{DoxyReturn}{Returns}
+data, return the data of Type\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_list_a688ce5b0c068f3206c1db5d8204b1538}\label{class_object_list_a688ce5b0c068f3206c1db5d8204b1538}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!begin@{begin}}
+\index{begin@{begin}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+\mbox{\hyperlink{class_object}{Object}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Begin() \begin{DoxyReturn}{Returns}
+pointer to the first object in the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_list_a871c37aa2be6787e1ae9a998035da488}\label{class_object_list_a871c37aa2be6787e1ae9a998035da488}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!end@{end}}
+\index{end@{end}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+\mbox{\hyperlink{class_object}{Object}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{class_object_list_a871c37aa2be6787e1ae9a998035da488}{end()}} \begin{DoxyReturn}{Returns}
+pointer to the last object in the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_list_a857dbfe6c6619d1c8568665eb62d4cd5}\label{class_object_list_a857dbfe6c6619d1c8568665eb62d4cd5}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!front@{front}}
+\index{front@{front}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type\& \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+front retrieve data from the front of the list. \begin{DoxyReturn}{Returns}
+data, return the data of Type\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_list_a7f401d4ab8aecc337dcfbbd2cc62907e}\label{class_object_list_a7f401d4ab8aecc337dcfbbd2cc62907e}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type\& \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+operator\mbox{[}\mbox{]} overload can use list\mbox{[}size\+\_\+t index\mbox{]} to get data at position index. \mbox{\Hypertarget{class_object_list_acb453cae157346bfaf1e4b85c2fee7b4}\label{class_object_list_acb453cae157346bfaf1e4b85c2fee7b4}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type\& \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+pop\+\_\+back retrieve and remove last element in list \begin{DoxyReturn}{Returns}
+data, data of Type from the rear of the list. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_list_a68db9229458dbd04c48f2383d9deae48}\label{class_object_list_a68db9229458dbd04c48f2383d9deae48}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!pop\_front@{pop\_front}}
+\index{pop\_front@{pop\_front}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type\& \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+pop\+\_\+front retrieve and remove first element in list \begin{DoxyReturn}{Returns}
+data, data of Type\& from the front of the list. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_list_a6bfdf768e281d08068bd27b05036237d}\label{class_object_list_a6bfdf768e281d08068bd27b05036237d}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{Type}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+push\+\_\+back insert data into the back of the list 
+\begin{DoxyParams}{Parameters}
+{\em data,data} & of Type to be inserted into the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_list_a55e268a0ce23ef765a180bdfc65ea1cd}\label{class_object_list_a55e268a0ce23ef765a180bdfc65ea1cd}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{Type}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+push\+\_\+front insert data into the front of the list 
+\begin{DoxyParams}{Parameters}
+{\em data,data} & of Type to be inserted into the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_list_a31c3db113686ec5253f0406aa448acda}\label{class_object_list_a31c3db113686ec5253f0406aa448acda}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!remove@{remove}}
+\index{remove@{remove}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::remove (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+remove data at specified position reducing the size of 1. 
+\begin{DoxyParams}{Parameters}
+{\em pos,size\+\_\+t} & remove the data at position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_list_a92231405c6efedc2d5a9a95806d4f660}\label{class_object_list_a92231405c6efedc2d5a9a95806d4f660}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!setData@{setData}}
+\index{setData@{setData}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+void \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::set\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{pos,  }\item[{Type}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+set\+Data insert data into the specified position of the list. This WILL OVERWRITE data at that position 
+\begin{DoxyParams}{Parameters}
+{\em pos,size\+\_\+t} & position where to overwrite data. \\
+\hline
+{\em data,data} & of Type to be inserted into the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_list_a8931050420ae88b9a1e303d9e4602f36}\label{class_object_list_a8931050420ae88b9a1e303d9e4602f36}} 
+\index{ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}!size@{size}}
+\index{size@{size}!ObjectList$<$ Type $>$@{ObjectList$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_object_list}{Object\+List}}$<$ Type $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+size get the size of the list. \begin{DoxyReturn}{Returns}
+size\+\_\+t size of the list. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Object\+List.\+hpp\end{DoxyCompactItemize}

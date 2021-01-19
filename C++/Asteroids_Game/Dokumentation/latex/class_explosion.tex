@@ -1,0 +1,95 @@
+\hypertarget{class_explosion}{}\doxysection{Explosion Class Reference}
+\label{class_explosion}\index{Explosion@{Explosion}}
+
+
+\mbox{\hyperlink{class_explosion}{Explosion}} class derrived from \mbox{\hyperlink{class_entity}{Entity}}.  
+
+
+
+
+{\ttfamily \#include $<$Content.\+h$>$}
+
+Inheritance diagram for Explosion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_explosion}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_explosion_a3686b2a9c2072b43726734bdba034b81}{Explosion}} ()
+\item 
+\mbox{\hyperlink{class_explosion_a1d92d619bd1aab2cda17b3f89a879b77}{Explosion}} (sf\+::\+Sprite sprite, sf\+::\+Vector2f pos, sf\+::\+Time time)
+\item 
+\mbox{\hyperlink{class_explosion_ac9c0baa7268ff5b8f4f358074a1326c0}{$\sim$\+Explosion}} ()
+\item 
+bool \mbox{\hyperlink{class_explosion_aa14d131c3627f9c9a5b701dc1a2e28f2}{time\+To\+Die}} (sf\+::\+Time time)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_explosion}{Explosion}} class derrived from \mbox{\hyperlink{class_entity}{Entity}}. 
+
+\mbox{\hyperlink{class_explosion}{Explosion}} implement a sprite that animate a sprite and then returns a bool to be \char`\"{}killed\char`\"{}. \begin{DoxyAuthor}{Author}
+Philip EKlund 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+GNU Public License. Free to do whatever you want. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_explosion_a3686b2a9c2072b43726734bdba034b81}\label{class_explosion_a3686b2a9c2072b43726734bdba034b81}} 
+\index{Explosion@{Explosion}!Explosion@{Explosion}}
+\index{Explosion@{Explosion}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{Explosion()}{Explosion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Explosion\+::\+Explosion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor, everything is zero \mbox{\Hypertarget{class_explosion_a1d92d619bd1aab2cda17b3f89a879b77}\label{class_explosion_a1d92d619bd1aab2cda17b3f89a879b77}} 
+\index{Explosion@{Explosion}!Explosion@{Explosion}}
+\index{Explosion@{Explosion}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{Explosion()}{Explosion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Explosion\+::\+Explosion (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite}]{sprite,  }\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Time}]{time }\end{DoxyParamCaption})}
+
+Constructor \mbox{\hyperlink{class_explosion}{Explosion}} will create an \mbox{\hyperlink{class_entity}{Entity}} object at specified position and will die after Time 
+\begin{DoxyParams}{Parameters}
+{\em sprite,sf\+::sprite} & object containing a texture for the object \\
+\hline
+{\em position,sf\+::\+Vector2f} & of desired position to spawn the object at \\
+\hline
+{\em time,sf\+::\+Time} & time that the object will be alive \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_explosion_ac9c0baa7268ff5b8f4f358074a1326c0}\label{class_explosion_ac9c0baa7268ff5b8f4f358074a1326c0}} 
+\index{Explosion@{Explosion}!````~Explosion@{$\sim$Explosion}}
+\index{````~Explosion@{$\sim$Explosion}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{$\sim$Explosion()}{~Explosion()}}
+{\footnotesize\ttfamily Explosion\+::$\sim$\+Explosion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_explosion_aa14d131c3627f9c9a5b701dc1a2e28f2}\label{class_explosion_aa14d131c3627f9c9a5b701dc1a2e28f2}} 
+\index{Explosion@{Explosion}!timeToDie@{timeToDie}}
+\index{timeToDie@{timeToDie}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{timeToDie()}{timeToDie()}}
+{\footnotesize\ttfamily bool Explosion\+::time\+To\+Die (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{time }\end{DoxyParamCaption})}
+
+time\+: Check if we are still allowed to live, also change animation state if 0,2 seconds left to live 
+\begin{DoxyParams}{Parameters}
+{\em time,sf\+::\+Time} & check if current time is greater than the time to live specified at construction \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Content.\+h\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Content.\+cpp\end{DoxyCompactItemize}

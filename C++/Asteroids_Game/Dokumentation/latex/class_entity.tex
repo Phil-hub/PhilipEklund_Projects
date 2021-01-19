@@ -1,0 +1,251 @@
+\hypertarget{class_entity}{}\doxysection{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+\mbox{\hyperlink{class_entity}{Entity}} class, This is the basic class for all objects on the screen.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+Inheritance diagram for Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_entity_a980f368aa07ce358583982821533a54a}{Entity}} ()
+\item 
+\mbox{\hyperlink{class_entity_ad38f2f3317e2802f0aba73171eed1853}{Entity}} (sf\+::\+Sprite sprite, sf\+::\+Vector2f position)
+\item 
+\mbox{\hyperlink{class_entity_a296b22e9598b90590eb499b345610ba8}{Entity}} (sf\+::\+Sprite sprite, sf\+::\+Vector2f position, sf\+::\+Vector2f vel, float rot=0)
+\item 
+\mbox{\hyperlink{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{$\sim$\+Entity}} ()
+\item 
+virtual void \mbox{\hyperlink{class_entity_a54b3d07540ef322721a97c6a18df9a46}{Move}} (sf\+::\+Time delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{class_entity_ae748164f75c07ba511708c387b698642}{Move}} (sf\+::\+Vector2f movement)
+\item 
+virtual void \mbox{\hyperlink{class_entity_a4f9b35b32e2c17d606397a8c2bac4449}{Rotate}} ()
+\item 
+virtual void \mbox{\hyperlink{class_entity_a515e889e27e58a09e2f3d3aec39a0848}{Rotate}} (float rot)
+\item 
+void \mbox{\hyperlink{class_entity_a93306ecdce9446da37560f5f2b5307c0}{set\+Position}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_entity_a4df4502cce07862130f09d97183c8455}{set\+Texture}} (sf\+::\+Texture $\ast$texture)
+\item 
+void \mbox{\hyperlink{class_entity_a8ff1f0c92459217d5df38d2d846c2c0a}{set\+Texture\+Rect}} (sf\+::\+Int\+Rect rect)
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_entity_a09c00c764d8498454f4f2e2b7fe371ea}{Boundary}} () const
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_entity_a4db7b53829f5394f7a72a3c6f7268640}{Entity\+Shape}} () const
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_entity_a11d7f8fde1e714c76a20b69793fa157c}{get\+Position}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_entity}{Entity}} class, This is the basic class for all objects on the screen. 
+
+This class is used for all objects displayed on the screen that use some kind of movement or collision detection. \begin{DoxyAuthor}{Author}
+Philip EKlund 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+If you want a constant speed/rotation on the object (like an asteroid) set velocity and rotation at construction of object. 
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+Improper use can crash your application! 
+\end{DoxyWarning}
+\begin{DoxyCopyright}{Copyright}
+GNU Public License. Free to do whatever you want. 
+\end{DoxyCopyright}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_example__entity_8cpp-example}{Example\+\_\+\+Entity.\+cpp}}.\end{Desc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_entity_a980f368aa07ce358583982821533a54a}\label{class_entity_a980f368aa07ce358583982821533a54a}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor, everything is empty/zero \mbox{\Hypertarget{class_entity_ad38f2f3317e2802f0aba73171eed1853}\label{class_entity_ad38f2f3317e2802f0aba73171eed1853}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite}]{sprite,  }\item[{sf\+::\+Vector2f}]{position }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em sprite,sf\+::sprite} & object containing a texture for the object \\
+\hline
+{\em position,sf\+::\+Vector2f} & of desired position to spawn the object at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a296b22e9598b90590eb499b345610ba8}\label{class_entity_a296b22e9598b90590eb499b345610ba8}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite}]{sprite,  }\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{vel,  }\item[{float}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em sprite,sf\+::sprite} & object containing a texture for the object \\
+\hline
+{\em position,sf\+::\+Vector2f} & of desired position to spawn the object at \\
+\hline
+{\em vel,sf\+::\+Vector2f} & of static velocity of the object (constant speed) \\
+\hline
+{\em rot,float} & of constant rotation of the object, default set to 0 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}\label{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}} 
+\index{Entity@{Entity}!````~Entity@{$\sim$Entity}}
+\index{````~Entity@{$\sim$Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{$\sim$Entity()}{~Entity()}}
+{\footnotesize\ttfamily Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_a09c00c764d8498454f4f2e2b7fe371ea}\label{class_entity_a09c00c764d8498454f4f2e2b7fe371ea}} 
+\index{Entity@{Entity}!Boundary@{Boundary}}
+\index{Boundary@{Boundary}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Boundary()}{Boundary()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Entity\+::\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return boundary of object(x, y, x size, y size) \begin{DoxyReturn}{Returns}
+sf\+::\+Float\+Rect rectangle of the boundary position and rotation of the object, used for collision detection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a4db7b53829f5394f7a72a3c6f7268640}\label{class_entity_a4db7b53829f5394f7a72a3c6f7268640}} 
+\index{Entity@{Entity}!EntityShape@{EntityShape}}
+\index{EntityShape@{EntityShape}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{EntityShape()}{EntityShape()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Entity\+::\+Entity\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the sprite object \begin{DoxyReturn}{Returns}
+sf\+::\+Sprite object, mainly used for rendering ( window.\+draw(sf\+::sprite) function). 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_example__entity_8cpp-example}{Example\+\_\+\+Entity.\+cpp}}.\end{Desc}
+\mbox{\Hypertarget{class_entity_a11d7f8fde1e714c76a20b69793fa157c}\label{class_entity_a11d7f8fde1e714c76a20b69793fa157c}} 
+\index{Entity@{Entity}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Entity\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the x and y position of the object \begin{DoxyReturn}{Returns}
+sf\+::\+Vector2f of the position of object 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_example__entity_8cpp-example}{Example\+\_\+\+Entity.\+cpp}}.\end{Desc}
+\mbox{\Hypertarget{class_entity_a54b3d07540ef322721a97c6a18df9a46}\label{class_entity_a54b3d07540ef322721a97c6a18df9a46}} 
+\index{Entity@{Entity}!Move@{Move}}
+\index{Move@{Move}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Entity\+::\+Move (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Move move object with default velocity 
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & sf\+::\+Time since last time it moved \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{struct_asteroid_a66d4042a8cba27ca65d0c95f90c26a6f}{Asteroid}}.
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_example__entity_8cpp-example}{Example\+\_\+\+Entity.\+cpp}}.\end{Desc}
+\mbox{\Hypertarget{class_entity_ae748164f75c07ba511708c387b698642}\label{class_entity_ae748164f75c07ba511708c387b698642}} 
+\index{Entity@{Entity}!Move@{Move}}
+\index{Move@{Move}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Entity\+::\+Move (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{movement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Move move object with custom vector 
+\begin{DoxyParams}{Parameters}
+{\em movement} & sf\+::\+Vector2f of desired custom movement \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a4f9b35b32e2c17d606397a8c2bac4449}\label{class_entity_a4f9b35b32e2c17d606397a8c2bac4449}} 
+\index{Entity@{Entity}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Entity\+::\+Rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotate rotate the object with constant rotation \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_example__entity_8cpp-example}{Example\+\_\+\+Entity.\+cpp}}.\end{Desc}
+\mbox{\Hypertarget{class_entity_a515e889e27e58a09e2f3d3aec39a0848}\label{class_entity_a515e889e27e58a09e2f3d3aec39a0848}} 
+\index{Entity@{Entity}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Entity\+::\+Rotate (\begin{DoxyParamCaption}\item[{float}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotate rotate the object with custom rotation 
+\begin{DoxyParams}{Parameters}
+{\em rot} & float of desired rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a93306ecdce9446da37560f5f2b5307c0}\label{class_entity_a93306ecdce9446da37560f5f2b5307c0}} 
+\index{Entity@{Entity}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+set\+Position set the desired position of the entity 
+\begin{DoxyParams}{Parameters}
+{\em X} & position on the screen \\
+\hline
+{\em Y} & position on the screen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a4df4502cce07862130f09d97183c8455}\label{class_entity_a4df4502cce07862130f09d97183c8455}} 
+\index{Entity@{Entity}!setTexture@{setTexture}}
+\index{setTexture@{setTexture}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setTexture()}{setTexture()}}
+{\footnotesize\ttfamily void Entity\+::set\+Texture (\begin{DoxyParamCaption}\item[{sf\+::\+Texture $\ast$}]{texture }\end{DoxyParamCaption})}
+
+set\+Texture set the desired position of the entity 
+\begin{DoxyParams}{Parameters}
+{\em texture} & sf\+::\+Texture pointer to a texture object to set the texture to \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_example__entity_8cpp-example}{Example\+\_\+\+Entity.\+cpp}}.\end{Desc}
+\mbox{\Hypertarget{class_entity_a8ff1f0c92459217d5df38d2d846c2c0a}\label{class_entity_a8ff1f0c92459217d5df38d2d846c2c0a}} 
+\index{Entity@{Entity}!setTextureRect@{setTextureRect}}
+\index{setTextureRect@{setTextureRect}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setTextureRect()}{setTextureRect()}}
+{\footnotesize\ttfamily void Entity\+::set\+Texture\+Rect (\begin{DoxyParamCaption}\item[{sf\+::\+Int\+Rect}]{rect }\end{DoxyParamCaption})}
+
+set\+Texture\+Rect set the desired area of the texture to display, normally for animation purposes 
+\begin{DoxyParams}{Parameters}
+{\em rect} & sf\+::\+Int\+Rect containing pixel position and size of x, y for the area to display \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_example__entity_8cpp-example}{Example\+\_\+\+Entity.\+cpp}}.\end{Desc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Entity.\+h\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Entity.\+cpp\end{DoxyCompactItemize}

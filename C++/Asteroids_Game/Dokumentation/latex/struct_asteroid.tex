@@ -1,0 +1,96 @@
+\hypertarget{struct_asteroid}{}\doxysection{Asteroid Struct Reference}
+\label{struct_asteroid}\index{Asteroid@{Asteroid}}
+
+
+\mbox{\hyperlink{struct_asteroid}{Asteroid}} struct derrived from \mbox{\hyperlink{class_entity}{Entity}} class.  
+
+
+
+
+{\ttfamily \#include $<$Content.\+h$>$}
+
+Inheritance diagram for Asteroid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_asteroid}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_asteroid_a603c2eb87a4ed26c5b3fb06e953d611c}{Asteroid}} ()
+\item 
+\mbox{\hyperlink{struct_asteroid_a1b4e02ec77a33eb3c566713c56c38515}{Asteroid}} (sf\+::\+Sprite sprite)
+\item 
+\mbox{\hyperlink{struct_asteroid_af2d697c3722cfb1c79997b6cf63c89df}{$\sim$\+Asteroid}} ()
+\item 
+virtual void \mbox{\hyperlink{struct_asteroid_a66d4042a8cba27ca65d0c95f90c26a6f}{Move}} (sf\+::\+Time delta\+Time) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_asteroid}{Asteroid}} struct derrived from \mbox{\hyperlink{class_entity}{Entity}} class. 
+
+\mbox{\hyperlink{struct_asteroid}{Asteroid}} struct implement random generator for spawning position, velocity and rotation of entity object. \begin{DoxyAuthor}{Author}
+Philip EKlund 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+GNU Public License. Free to do whatever you want. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_asteroid_a603c2eb87a4ed26c5b3fb06e953d611c}\label{struct_asteroid_a603c2eb87a4ed26c5b3fb06e953d611c}} 
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{Asteroid()}{Asteroid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Asteroid\+::\+Asteroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor, everything is zero \mbox{\Hypertarget{struct_asteroid_a1b4e02ec77a33eb3c566713c56c38515}\label{struct_asteroid_a1b4e02ec77a33eb3c566713c56c38515}} 
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{Asteroid()}{Asteroid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Asteroid\+::\+Asteroid (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite}]{sprite }\end{DoxyParamCaption})}
+
+Constructor \mbox{\hyperlink{struct_asteroid}{Asteroid}} will create an \mbox{\hyperlink{class_entity}{Entity}} object with a random velocity in x and y, also a random rotation. 
+\begin{DoxyParams}{Parameters}
+{\em sprite,sf\+::sprite} & object containing a texture for the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_asteroid_af2d697c3722cfb1c79997b6cf63c89df}\label{struct_asteroid_af2d697c3722cfb1c79997b6cf63c89df}} 
+\index{Asteroid@{Asteroid}!````~Asteroid@{$\sim$Asteroid}}
+\index{````~Asteroid@{$\sim$Asteroid}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{$\sim$Asteroid()}{~Asteroid()}}
+{\footnotesize\ttfamily Asteroid\+::$\sim$\+Asteroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_asteroid_a66d4042a8cba27ca65d0c95f90c26a6f}\label{struct_asteroid_a66d4042a8cba27ca65d0c95f90c26a6f}} 
+\index{Asteroid@{Asteroid}!Move@{Move}}
+\index{Move@{Move}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Asteroid\+::\+Move (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. ~\newline
+ OVERRIDE Move function of entity class to include default velocity AND rotation 
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & sf\+::\+Time since last time it moved \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a54b3d07540ef322721a97c6a18df9a46}{Entity}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Content.\+h\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Content.\+cpp\end{DoxyCompactItemize}

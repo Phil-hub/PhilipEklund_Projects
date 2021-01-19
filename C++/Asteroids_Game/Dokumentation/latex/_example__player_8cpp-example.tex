@@ -1,0 +1,29 @@
+\hypertarget{_example__player_8cpp-example}{}\doxysection{Example\+\_\+\+Player.\+cpp}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}../Player.h"{}}}
+\DoxyCodeLine{\textcolor{keywordtype}{void} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{//Create default player}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_player}{Player}} player;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Tell player to move down}}
+\DoxyCodeLine{    player.\mbox{\hyperlink{class_player_a04c4cb2bd09f66ecabaf850b675a282c}{MoveDown}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Tell player to also move left}}
+\DoxyCodeLine{    \textcolor{comment}{//This will AUTOMATICALLY CHANGE TEXTURE RECT to left(0,0,53,43) in PLAYER object}}
+\DoxyCodeLine{    player.\mbox{\hyperlink{class_player_a5c5f99caf90f933e8b1968fe175ac5e8}{MoveLeft}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Player will no longer move left, texture will reset to (53,0,53,43)}}
+\DoxyCodeLine{    player.\mbox{\hyperlink{class_player_a5c5f99caf90f933e8b1968fe175ac5e8}{MoveLeft}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Tell player to also move right}}
+\DoxyCodeLine{    \textcolor{comment}{//This will AUTOMATICALLY CHANGE TEXTURE RECT to right(105,0,53,43) in PLAYER object}}
+\DoxyCodeLine{    player.\mbox{\hyperlink{class_player_adba2c4ab7d5c596f8b8c2f34de8fbe51}{MoveRight}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//Make the movement, time since last update was 0.05 seconds (Down + Right)}}
+\DoxyCodeLine{    player.\mbox{\hyperlink{class_player_a0a451c0400b68fc74d1519f0ba4a38c1}{MovePlayer}}(sf::seconds(0.05));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

@@ -1,0 +1,21 @@
+\hypertarget{_example_engine_8cpp-example}{}\doxysection{Example\+\_\+engine.\+cpp}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{struct_engine}{Engine}} t;}
+\DoxyCodeLine{    sf::sprite sprite = *t.\mbox{\hyperlink{struct_engine_a49f1436cc76139596207d5c5f0910db2}{loadTexture}}(\textcolor{stringliteral}{"{}image.png"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordtype}{int} x =10; \textcolor{comment}{//Start position of X}}
+\DoxyCodeLine{    \textcolor{keywordtype}{int} y =0; \textcolor{comment}{//Start position of y}}
+\DoxyCodeLine{    \textcolor{keywordtype}{int} size\_x = 15; \textcolor{comment}{//Size in Pixels along X}}
+\DoxyCodeLine{    \textcolor{keywordtype}{int} size\_y = 15; \textcolor{comment}{//Size in Pixels along y}}
+\DoxyCodeLine{    sf::sprite PortionSpriteState = *t.\mbox{\hyperlink{struct_engine_a24377aad0a57efd33ccaa8547a84f59d}{loadTextureRect}}(\textcolor{stringliteral}{"{}image.png"{}}, x,y, size\_x, size\_y);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    sf::SoundBuffer = t.\mbox{\hyperlink{struct_engine_aa1933d8afd345bd24d7b311601182aee}{loadSound}}(\textcolor{stringliteral}{"{}Sound/blaster.wav"{}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

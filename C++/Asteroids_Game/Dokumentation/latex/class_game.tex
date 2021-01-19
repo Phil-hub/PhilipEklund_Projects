@@ -1,0 +1,181 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+\mbox{\hyperlink{class_game}{Game}} class, using \mbox{\hyperlink{struct_engine}{Engine}} for loading resuorces. This is the actual game controller class.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\item 
+void \mbox{\hyperlink{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}} ()
+\item 
+void \mbox{\hyperlink{class_game_aeef0f3e9e8d8f2efeb75c10e1dda4ef2}{Game\+Over}} ()
+\item 
+void \mbox{\hyperlink{class_game_af27fbec8857b025e04d19890b4449ed0}{Restart}} ()
+\item 
+void \mbox{\hyperlink{class_game_aad9ce78535c5d99158a4feec1a18497e}{spawn\+Asteroid}} ()
+\item 
+void \mbox{\hyperlink{class_game_a4320fa902bdcaaea538001e8b68f370f}{handle\+Player\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+void \mbox{\hyperlink{class_game_a79f698dda206dd7a9bed28b3f88bdc38}{process\+Events}} ()
+\item 
+void \mbox{\hyperlink{class_game_adea5f23d406179d311f9b3a47b013bd6}{update}} (sf\+::\+Time delsta\+Time)
+\item 
+void \mbox{\hyperlink{class_game_a15ddd769261d923827a3cdf41499c843}{render}} ()
+\item 
+void \mbox{\hyperlink{class_game_a04598b31d30614a0eda08dd8b3dcecb9}{collision\+Detection}} ()
+\item 
+void \mbox{\hyperlink{class_game_a2c34734aafad5204f3fdbfc26c082769}{fire}} (bool)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_game}{Game}} class, using \mbox{\hyperlink{struct_engine}{Engine}} for loading resuorces. This is the actual game controller class. 
+
+Class that controls the game with frame updates and user inputs. \begin{DoxyAuthor}{Author}
+Philip EKlund 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+Default constructor uses\+: ~\newline
+ Textures/asteroids.\+png ~\newline
+ Textures/explosion.\+png ~\newline
+ Textures/shot.\+png ~\newline
+ font.\+ttf ~\newline
+ Sound/blaster.\+wav ~\newline
+ Sound/explosion.\+wav 
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+Improper use can crash your application! 
+\end{DoxyWarning}
+\begin{DoxyCopyright}{Copyright}
+GNU Public License. Free to do whatever you want. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor Default window size is 640 x 400 pixels \mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a04598b31d30614a0eda08dd8b3dcecb9}\label{class_game_a04598b31d30614a0eda08dd8b3dcecb9}} 
+\index{Game@{Game}!collisionDetection@{collisionDetection}}
+\index{collisionDetection@{collisionDetection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{collisionDetection()}{collisionDetection()}}
+{\footnotesize\ttfamily void Game\+::collision\+Detection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Collision\+Detection run an collision detection algorithm between all asteroids player and shots. \mbox{\Hypertarget{class_game_a2c34734aafad5204f3fdbfc26c082769}\label{class_game_a2c34734aafad5204f3fdbfc26c082769}} 
+\index{Game@{Game}!fire@{fire}}
+\index{fire@{fire}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{fire()}{fire()}}
+{\footnotesize\ttfamily void Game\+::fire (\begin{DoxyParamCaption}\item[{bool}]{firing }\end{DoxyParamCaption})}
+
+fire 
+\begin{DoxyParams}{Parameters}
+{\em bool} & if we are trying to fire the blasters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_aeef0f3e9e8d8f2efeb75c10e1dda4ef2}\label{class_game_aeef0f3e9e8d8f2efeb75c10e1dda4ef2}} 
+\index{Game@{Game}!GameOver@{GameOver}}
+\index{GameOver@{GameOver}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{GameOver()}{GameOver()}}
+{\footnotesize\ttfamily void Game\+::\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_game}{Game}} over \mbox{\Hypertarget{class_game_a4320fa902bdcaaea538001e8b68f370f}\label{class_game_a4320fa902bdcaaea538001e8b68f370f}} 
+\index{Game@{Game}!handlePlayerInput@{handlePlayerInput}}
+\index{handlePlayerInput@{handlePlayerInput}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{handlePlayerInput()}{handlePlayerInput()}}
+{\footnotesize\ttfamily void Game\+::handle\+Player\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})}
+
+handle\+Player\+Input Set bool of the key to true/false (Pressed, Released) 
+\begin{DoxyParams}{Parameters}
+{\em key} & is a sf\+::keyboard\+::key input \\
+\hline
+{\em bool} & if it is pressed or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a79f698dda206dd7a9bed28b3f88bdc38}\label{class_game_a79f698dda206dd7a9bed28b3f88bdc38}} 
+\index{Game@{Game}!processEvents@{processEvents}}
+\index{processEvents@{processEvents}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{processEvents()}{processEvents()}}
+{\footnotesize\ttfamily void Game\+::process\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+process\+Events process keyboard events from sf\+::\+Events 
+\begin{DoxyParams}{Parameters}
+{\em key} & is a sf\+::keyboard\+::key input \\
+\hline
+{\em bool} & if it is pressed or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a15ddd769261d923827a3cdf41499c843}\label{class_game_a15ddd769261d923827a3cdf41499c843}} 
+\index{Game@{Game}!render@{render}}
+\index{render@{render}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Render clear last frame window and draw all objects contained in the game to a new frame. \mbox{\Hypertarget{class_game_af27fbec8857b025e04d19890b4449ed0}\label{class_game_af27fbec8857b025e04d19890b4449ed0}} 
+\index{Game@{Game}!Restart@{Restart}}
+\index{Restart@{Restart}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Restart()}{Restart()}}
+{\footnotesize\ttfamily void Game\+::\+Restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset to start \mbox{\Hypertarget{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}\label{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}} 
+\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Run the game \mbox{\Hypertarget{class_game_aad9ce78535c5d99158a4feec1a18497e}\label{class_game_aad9ce78535c5d99158a4feec1a18497e}} 
+\index{Game@{Game}!spawnAsteroid@{spawnAsteroid}}
+\index{spawnAsteroid@{spawnAsteroid}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{spawnAsteroid()}{spawnAsteroid()}}
+{\footnotesize\ttfamily void Game\+::spawn\+Asteroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Spawn an asteroid game object \mbox{\Hypertarget{class_game_adea5f23d406179d311f9b3a47b013bd6}\label{class_game_adea5f23d406179d311f9b3a47b013bd6}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delsta\+Time }\end{DoxyParamCaption})}
+
+Update runs every frame, update the gamestate depending on if delta\+Time is greater than desired FPS output 
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & is a sf\+::\+Time of the time elapsed since last update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Game.\+h\item 
+C\+:/\+Users/\+N3\+RO/\+Documents/\+Skola/\+HT2020/\+Programmeringsmetodik/\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/\+Philip\+Eklund\+\_\+\+Projekt/Game.\+cpp\end{DoxyCompactItemize}
