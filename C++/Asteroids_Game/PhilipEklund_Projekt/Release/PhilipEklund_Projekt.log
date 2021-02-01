@@ -1,0 +1,115 @@
+﻿Environment at start of build:
+ALLUSERSPROFILE = C:\ProgramData
+ANDROID_SDK_HOME = E:\ANDROID_SDK_HOME
+APPDATA = C:\Users\N3RO\AppData\Roaming
+BESIEGE_GAME_ASSEMBLIES = E:/Games/Steam/steamapps/common/Besiege/Besiege_Data\Managed/
+BESIEGE_UNITY_ASSEMBLIES = E:/Games/Steam/steamapps/common/Besiege/Besiege_Data\Managed/
+CommonProgramFiles = C:\Program Files (x86)\Common Files
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+CommonProgramW6432 = C:\Program Files\Common Files
+COMPUTERNAME = MALTHAEL
+ComSpec = C:\WINDOWS\system32\cmd.exe
+configsetroot = C:\WINDOWS\ConfigSetRoot
+DriverData = C:\Windows\System32\Drivers\DriverData
+ffmpeg = C:\ffmpeg-20200620-29ea4e1-win64-static\bin\ffmpeg.exe
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING = Default
+HOMEDRIVE = C:
+HOMEPATH = \Users\N3RO
+INTEL_DEV_REDIST = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+LOCALAPPDATA = C:\Users\N3RO\AppData\Local
+LOGONSERVER = \\MALTHAEL
+MIC_LD_LIBRARY_PATH = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+MSBuildLoadMicrosoftTargetsReadOnly = true
+NUMBER_OF_PROCESSORS = 12
+OneDrive = C:\Users\N3RO\OneDrive
+OneDriveConsumer = C:\Users\N3RO\OneDrive
+OS = Windows_NT
+Path = C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\PuTTY\;C;C:\Users\N3RO\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\N3RO\AppData\Local\Programs\Python\Python37\;C:\Users\N3RO\AppData\Local\Microsoft\WindowsApps;C:\Users\N3RO\AppData\Roaming\npm;C:\Users\N3RO\AppData\Local\GitHubDesktop\bin
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PkgDefApplicationConfigFile = C:\Users\N3RO\AppData\Local\Microsoft\VisualStudio\15.0_d12727ce\devenv.exe.config
+PROCESSOR_ARCHITECTURE = x86
+PROCESSOR_ARCHITEW6432 = AMD64
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+PROCESSOR_LEVEL = 6
+PROCESSOR_REVISION = 9e0a
+ProgramData = C:\ProgramData
+ProgramFiles = C:\Program Files (x86)
+ProgramFiles(x86) = C:\Program Files (x86)
+ProgramW6432 = C:\Program Files
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC = C:\Users\Public
+SESSIONNAME = Console
+SystemDrive = C:
+SystemRoot = C:\WINDOWS
+TEMP = C:\Users\N3RO\AppData\Local\Temp
+TMP = C:\Users\N3RO\AppData\Local\Temp
+USERDOMAIN = MALTHAEL
+USERDOMAIN_ROAMINGPROFILE = MALTHAEL
+USERNAME = N3RO
+USERPROFILE = C:\Users\N3RO
+VBOX_MSI_INSTALL_PATH = E:\Program Files\Oracle\VirtualBox\;D:\Program Files\Oracle\VirtualBox\
+VisualStudioDir = C:\Users\N3RO\OneDrive\Dokument\Visual Studio 2017
+VisualStudioEdition = Microsoft Visual Studio Community 2017
+VisualStudioVersion = 15.0
+VSAPPIDDIR = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\
+VSAPPIDNAME = devenv.exe
+VSLANG = 1033
+VSSKUEDITION = Community
+windir = C:\WINDOWS
+
+  Content.cpp
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\content.cpp(17): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\content.cpp(69): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\content.cpp(74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Engine.cpp
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\engine.cpp(22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Entity.cpp
+  Game.cpp
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.cpp(138): warning C4018: '<': signed/unsigned mismatch
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.cpp(142): warning C4018: '<': signed/unsigned mismatch
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.cpp(172): warning C4018: '<': signed/unsigned mismatch
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.cpp(174): warning C4018: '<': signed/unsigned mismatch
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.cpp(201): warning C4018: '<': signed/unsigned mismatch
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.cpp(216): warning C4018: '<': signed/unsigned mismatch
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(247): warning C4018: '<': signed/unsigned mismatch
+  f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(234): note: while compiling class template member function 'void ObjectList<Explosion>::remove(size_t)'
+  f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.cpp(185): note: see reference to function template instantiation 'void ObjectList<Explosion>::remove(size_t)' being compiled
+  f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.h(101): note: see reference to class template instantiation 'ObjectList<Explosion>' being compiled
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(218): warning C4018: '<': signed/unsigned mismatch
+  f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(215): note: while compiling class template member function 'Type &ObjectList<Type>::at(size_t) const'
+          with
+          [
+              Type=Shot
+          ]
+  f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\game.cpp(175): note: see reference to function template instantiation 'Type &ObjectList<Type>::at(size_t) const' being compiled
+          with
+          [
+              Type=Shot
+          ]
+  Main.cpp
+  ObjectList.hpp
+  Player.cpp
+  Generating code
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(192): warning C4172: returning address of local variable or temporary: data
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(140): warning C4172: returning address of local variable or temporary: data
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(192): warning C4172: returning address of local variable or temporary: data
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(140): warning C4172: returning address of local variable or temporary: data
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(192): warning C4172: returning address of local variable or temporary: data
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(140): warning C4172: returning address of local variable or temporary: data
+f:\users\github\philipeklund_projects\c++\asteroids_game\philipeklund_projekt\objectlist.hpp(192): warning C4172: returning address of local variable or temporary: data
+  All 388 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  PhilipEklund_Projekt.vcxproj -> F:\Users\GitHub\PhilipEklund_Projects\C++\Asteroids_Game\Release\PhilipEklund_Projekt.exe
